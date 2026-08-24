@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式投資で心のゆとりを失う原因を9タイプから診断します。">
+  <title>株式投資メンタル診断</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="start-screen" class="screen active">
+      <div class="badge">FREE CHECK</div>
+      <h1>株式投資<br><span>メンタル診断</span></h1>
+      <p class="lead">あなたが投資で心のゆとりを失いやすい原因を、9タイプから診断します。</p>
+
+      <div class="intro-card">
+        <div class="intro-item"><strong>15</strong><span>質問</span></div>
+        <div class="intro-item"><strong>約3</strong><span>分</span></div>
+        <div class="intro-item"><strong>9</strong><span>タイプ</span></div>
+      </div>
+
+      <div class="notice">
+        <strong>正解・不正解はありません。</strong><br>
+        「こうありたい自分」ではなく、普段の自分に近いものを選んでください。
+      </div>
+
+      <button id="start-btn" class="primary-btn">診断をはじめる</button>
+    </section>
+
+    <section id="quiz-screen" class="screen">
+      <div class="quiz-top">
+        <span id="question-number">1 / 15</span>
+        <div class="progress"><div id="progress-bar"></div></div>
+      </div>
+
+      <div class="question-card">
+        <p class="question-label">QUESTION <span id="question-index">01</span></p>
+        <h2 id="question-text"></h2>
+      </div>
+
+      <div id="answers" class="answers">
+        <button class="answer-btn" data-value="1">まったく当てはまらない</button>
+        <button class="answer-btn" data-value="2">あまり当てはまらない</button>
+        <button class="answer-btn" data-value="3">どちらともいえない</button>
+        <button class="answer-btn" data-value="4">やや当てはまる</button>
+        <button class="answer-btn" data-value="5">非常に当てはまる</button>
+      </div>
+    </section>
+
+    <section id="result-screen" class="screen">
+      <div class="result-head">
+        <p class="eyebrow">YOUR RESULT</p>
+        <p>あなたの投資メンタルタイプは</p>
+        <h2 id="result-type"></h2>
+        <p id="result-copy" class="result-copy"></p>
+      </div>
+
+      <div class="result-card">
+        <h3>このタイプの特徴</h3>
+        <p id="result-description"></p>
+
+        <h3>投資で起こりやすいこと</h3>
+        <ul id="result-behaviors"></ul>
+
+        <h3>心のゆとりを取り戻すポイント</h3>
+        <p id="result-advice"></p>
+      </div>
+
+      <div class="coach-card">
+        <p class="coach-label">MENTAL COACH MESSAGE</p>
+        <p id="result-message"></p>
+      </div>
+
+      <div class="line-card">
+        <p class="line-label">FREE SUPPORT</p>
+        <h3>投資で振り回されない<br>心のゆとりを育てる</h3>
+        <p>診断結果をきっかけに、投資メンタルを整えるヒントを受け取ってください。</p>
+        <a class="line-btn" href="https://line.me/R/ti/p/%40482jqxea" target="_blank" rel="noopener noreferrer">公式LINEを受け取る</a>
+      </div>
+
+      <button id="retry-btn" class="secondary-btn">もう一度診断する</button>
+      <p class="disclaimer">※本診断は投資判断を目的としたものではありません。診断結果は自己理解のための参考情報です。</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
