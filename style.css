@@ -352,6 +352,34 @@ h1 span {
 .line-btn {
   background: #1f8f52;
   color: #fff;
+  padding: 14px 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.line-card > p.line-instruction {
+  margin: 12px 0 0;
+  font-size: 12px;
+}
+
+.line-instruction strong {
+  color: var(--accent-dark);
+}
+
+.course-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 0;
+  color: #203b59;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.line-btn:focus-visible,
+.course-link:focus-visible {
+  outline: 3px solid #203b59;
+  outline-offset: 4px;
 }
 
 .disclaimer {

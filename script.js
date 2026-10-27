@@ -503,6 +503,9 @@ function showResult() {
   $("result-type").textContent =
     data.name;
 
+  $("line-result-type").textContent =
+    `「${data.name}」`;
+
   $("result-copy").textContent =
     data.copy;
 
